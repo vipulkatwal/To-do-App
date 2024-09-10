@@ -1,0 +1,35 @@
+<html lang="en">
+	<head>
+		<!-- Meta tags for character set and viewport -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>To-Do List</title>
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="../Images/icon.png" />
+		<!-- Link to external CSS file -->
+		<link rel="stylesheet" href="../CSS/style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<!-- Todo App Container -->
+			<div class="todo-app">
+				<!-- Title with an image -->
+				<h2>To-Do List <img src="../Images/icon.png" alt="To-Do Icon" /></h2>
+				<!-- Search Box -->
+				<div class="row">
+					<!-- Input box for adding tasks -->
+					<input type="text" id="input-box" placeholder="Add your task" />
+					<!-- Button to add a task, calls the addTask() function -->
+					<button onclick="addTask()">Add</button>
+				</div>
+				<!-- List container for displaying tasks -->
+				<ul id="list-container">
+					<!-- List items will be dynamically added here -->
+				</ul>
+			</div>
+		</div>
+
+		<!-- JavaScript file for dynamic behavior -->
+		<script src="../JS/app.js"></script>
+	</body>
+</html>
